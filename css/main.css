@@ -1,0 +1,83 @@
+:root {
+    --color-black: #000;
+}
+
+body {
+    background-color: var(--color-black);
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    height: 400vh;
+    position: relative;
+}
+
+.moon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50vw;
+    background-image: url('../img/moon.svg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.space-craft {
+    position: fixed;
+    top: 10vh;
+    left: calc(50% - 3.5rem);
+    width: 7rem;
+    height: 12rem;
+    background-image: url('../img/spacecraft.png');
+    background-size: cover;
+}
+
+#stars {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    width: 2.1rem;
+    height: 2rem;
+    background-image: url('../img/star.png');
+    background-size: cover;
+}
+
+
+.message {
+    position: fixed;
+    top: 20vh;
+    width: 20rem;
+    height: 20rem;
+    transition: 1s;
+    color: white;
+    font-family: arial;
+    font-size: 1.5rem;
+}
+
+.message--left {
+    left: -50vw;
+}
+
+.message--left.show {
+    left: 20vw;
+}
+
+.message--right {
+    right: -50vw;
+}
+
+.message--right.show {
+    right: 20vw;
+}
+
+.message--idecrea {
+    color: darkblue;
+}
